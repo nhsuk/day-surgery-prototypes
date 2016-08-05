@@ -8,20 +8,55 @@
 
   <body>
     <img src="../assets/images/day-guide--getting-there--top.png" width="768" usemap="#map_1" id="top" border="0">
-	<img src="../assets/images/day-guide--getting-there--public__closed.png" width="768" id="public">
-	<img src="../assets/images/day-guide--getting-there--car__closed.png" width="768" id="car">
-    <img src="../assets/images/day-guide--getting-there--bottom.png" width="768" usemap="#map_2" id="bottom" border="0">
-    
+  	<img src="../assets/images/day-guide--getting-there--public__closed.png" width="768" usemap="#map_2" id="public">
+  	<img src="../assets/images/day-guide--getting-there--car__closed.png" width="768" usemap="#map_3" id="car" border="0">
+    <img src="../assets/images/day-guide--getting-there--bottom.png" width="768" usemap="#map_4" id="bottom" border="0">
+
     <map name="map_1">
       <area shape="rect" coords="143,248,310,281" href="#bottom">
       <area shape="rect" coords="29,511,188,548" href="#MAPS LINK">
       <area shape="rect" coords="25,19,94,56" href="cover.html">
       <area shape="rect" coords="636,14,735,57" href="cover.html">
-    </map>
-    <map name="map_2">
+  </map>
+
+  <map name="map_2">
       <area shape="rect" coords="32,153,194,195" href="#MAPS LINK">
       <area shape="rect" coords="437,349,751,426" href="on-the-day.html">
+      <area shape="rect" coords="28,16,208,54" href="#" id="public-click">
     </map>
+    
+    <map name="map_3">
+      <area shape="rect" coords="26,6,171,59" href="#" id="car-click">
+    </map>
+
+    <script src="../assets/javascripts/jquery-1.12.4.min.js"></script>
+    <script>
+      var $public = $('#public-click');
+      var $publicPic = $('#public');
+
+      $public.on('click', function(e) {
+        e.preventDefault();
+        var mySrc = $publicPic.attr('src');
+        if (mySrc.indexOf('__closed') !== -1) {
+          $publicPic.attr('src', '../assets/images/day-guide--getting-there--public__open.png');
+        } else {
+          $publicPic.attr('src', '../assets/images/day-guide--getting-there--public__closed.png');
+        }
+      });
+
+      var $car = $('#car-click');
+      var $carPic = $('#car');
+
+      $car.on('click', function(e) {
+        e.preventDefault();
+        var mySrc = $carPic.attr('src');
+        if (mySrc.indexOf('__closed') !== -1) {
+          $carPic.attr('src', '../assets/images/day-guide--getting-there--car__open.png');
+        } else {
+          $carPic.attr('src', '../assets/images/day-guide--getting-there--car__closed.png');
+        }
+      });
+    </script>
   </body>
 
 </html>
