@@ -7,31 +7,85 @@
   </head>
 
   <body>
-    <img src="../assets/images/day-guide--getting-there--top.png" usemap="#map_1" id="top" border="0">
-  	<img src="../assets/images/day-guide--getting-there--public__closed.png" usemap="#map_2" id="public">
-  	<img src="../assets/images/day-guide--getting-there--car__closed.png" usemap="#map_3" id="car" border="0">
-    <img src="../assets/images/day-guide--getting-there--bottom.png" usemap="#map_4" id="bottom" border="0">
+    <div class="wrapper">
+      <img src="../assets/images/day-guide--getting-there--top.png" id="top" border="0">
 
-    <map name="map_1">
-      <area shape="rect" coords="143,248,310,281" href="#bottom">
-      <area shape="rect" coords="29,511,188,548" href="https://maps.apple.com/maps?address=Whipps%20Cross%20Road,%20London,%20E11%201NR,%20England&auid=17399430592839820642&ll=51.578023,0.002779&lsp=9902&q=Whipps%20Cross%20University%20Hospital&t=m">
-      <area shape="rect" coords="25,19,94,56" href="cover.html">
-      <area shape="rect" coords="636,14,735,57" href="cover.html">
-    </map>
+      <!-- Back to index -->
+      <a href="../contents.html"
+         style="top: 15px;
+                left: 13px;
+                width: 90px;
+                height: 40px;"></a>
 
-    <map name="map_2">
-     <area shape="rect" coords="28,16,208,54" href="#" id="public-click">
-     <area shape="rect" coords="25,301,460,338" href="https://tfl.gov.uk/plan-a-journey/">
-    </map>
+      <!-- Back to index -->
+      <a href="../contents.html"
+         style="top: 15px;
+                left: 639px;
+                width: 90px;
+                height: 40px;"></a>
 
-    <map name="map_3">
-      <area shape="rect" coords="26,6,171,59" href="#" id="car-click">
-    </map>
+      <!-- Anchor link to Plane Tree -->
+      <a href="#bottom"
+         style="top: 242px;
+                left: 139px;
+                width: 180px;
+                height: 40px;"></a>
 
-    <map name="map_4">
-      <area shape="rect" coords="29,151,197,197" href="https://maps.apple.com/maps?address=Whipps%20Cross%20University%20Hospital,%20Hospital%20Road,%20London,%20E11,%20England&ll=51.577181,0.002722&q=Whipps%20Cross%20University%20Hospital,%20Hospital%20Road,%20London,%20E11,%20England">
-      <area shape="rect" coords="448,356,748,422" href="on-the-day.html">
-    </map>
+      <!-- Maps link -->
+      <a href="https://maps.apple.com/maps?address=Whipps%20Cross%20Road,%20London,%20E11%201NR,%20England&auid=17399430592839820642&ll=51.578023,0.002779&lsp=9902&q=Whipps%20Cross%20University%20Hospital&t=m"
+         style="top: 507px;
+                left: 19px;
+                width: 180px;
+                height: 40px;"></a>
+    </div>
+
+    <div class="wrapper">
+  	  <img src="../assets/images/day-guide--getting-there--public__closed.png" id="public">
+
+      <!-- Toggle link -->
+      <a href="#" id="public-click"
+         style="top: 12px;
+                left: 19px;
+                width: 196px;
+                height: 40px;"></a>
+
+      <!-- TFL link -->
+      <a href="https://tfl.gov.uk/plan-a-journey/"
+         style="top: 299px;
+                left: 19px;
+                width: 436px;
+                height: 40px;"></a>
+
+    </div>
+
+    <div class="wrapper">
+  	  <img src="../assets/images/day-guide--getting-there--car__closed.png" id="car" border="0">
+
+      <!-- Toggle link -->
+      <a href="#" id="car-click"
+         style="top: 12px;
+                left: 19px;
+                width: 196px;
+                height: 40px;"></a>
+    </div>
+
+    <div class="wrapper">
+      <img src="../assets/images/day-guide--getting-there--bottom.png" id="bottom" border="0">
+
+      <!-- Map link -->
+      <a href="https://maps.apple.com/maps?q=51.577123,0.002729&sll=51.577123,0.002729&sspn=0.003053,0.009021&t=m"
+         style="top: 152px;
+                left: 19px;
+                width: 196px;
+                height: 40px;"></a>
+
+      <!-- Next page link -->
+      <a href="on-the-day.html"
+         style="top: 362px;
+                left: 459px;
+                width: 276px;
+                height: 54px;"></a>
+    </div>
 
     <script src="../assets/javascripts/jquery-1.12.4.min.js"></script>
     <script>
