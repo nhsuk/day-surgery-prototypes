@@ -1,0 +1,120 @@
+<html>
+
+  <head>
+    <title>Prototypes: day surgery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/stylesheets/main.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <img src="../assets/images/day-guide--getting-there--top.png" id="top" border="0">
+
+      <!-- Back to index -->
+      <a href="cover.html"
+         style="top: 15px;
+                left: 13px;
+                width: 90px;
+                height: 40px;"></a>
+
+      <!-- Back to index -->
+      <a href="../contents.html"
+         style="top: 15px;
+                left: 639px;
+                width: 90px;
+                height: 40px;"></a>
+
+      <!-- Anchor link to Plane Tree -->
+      <a href="#bottom"
+         style="top: 242px;
+                left: 139px;
+                width: 180px;
+                height: 40px;"></a>
+
+      <!-- Maps link -->
+      <a href="https://maps.apple.com/maps?address=Whipps%20Cross%20Road,%20London,%20E11%201NR,%20England&auid=17399430592839820642&ll=51.578023,0.002779&lsp=9902&q=Whipps%20Cross%20University%20Hospital&t=m"
+         style="top: 507px;
+                left: 19px;
+                width: 180px;
+                height: 40px;"></a>
+    </div>
+
+    <div class="wrapper">
+  	  <img src="../assets/images/day-guide--getting-there--public__closed.png" id="public">
+
+      <!-- Toggle link -->
+      <a href="#" id="public-click"
+         style="top: 12px;
+                left: 19px;
+                width: 196px;
+                height: 40px;"></a>
+
+      <!-- TFL link -->
+      <a href="https://tfl.gov.uk/plan-a-journey/"
+         style="top: 299px;
+                left: 19px;
+                width: 436px;
+                height: 40px;"></a>
+
+    </div>
+
+    <div class="wrapper">
+  	  <img src="../assets/images/day-guide--getting-there--car__closed.png" id="car" border="0">
+
+      <!-- Toggle link -->
+      <a href="#" id="car-click"
+         style="top: 12px;
+                left: 19px;
+                width: 196px;
+                height: 40px;"></a>
+    </div>
+
+    <div class="wrapper">
+      <img src="../assets/images/day-guide--getting-there--bottom__joint-replacement.png" id="bottom" border="0">
+
+      <!-- Map link -->
+      <a href="https://maps.apple.com/maps?q=51.577123,0.002729&sll=51.577123,0.002729&sspn=0.003053,0.009021&t=m"
+         style="top: 152px;
+                left: 19px;
+                width: 196px;
+                height: 40px;"></a>
+
+      <!-- Next page link -->
+      <a href="your-operation.html"
+         style="top: 362px;
+                left: 459px;
+                width: 276px;
+                height: 54px;"></a>
+    </div>
+
+    <script src="../assets/javascripts/jquery-1.12.4.min.js"></script>
+    <script>
+      var $public = $('#public-click');
+      var $publicPic = $('#public');
+
+      $public.on('click', function(e) {
+        e.preventDefault();
+        var mySrc = $publicPic.attr('src');
+        if (mySrc.indexOf('__closed') !== -1) {
+          $publicPic.attr('src', '../assets/images/day-guide--getting-there--public__open.png');
+        } else {
+          $publicPic.attr('src', '../assets/images/day-guide--getting-there--public__closed.png');
+        }
+      });
+
+      var $car = $('#car-click');
+      var $carPic = $('#car');
+
+      $car.on('click', function(e) {
+        e.preventDefault();
+        var mySrc = $carPic.attr('src');
+        if (mySrc.indexOf('__closed') !== -1) {
+          $carPic.attr('src', '../assets/images/day-guide--getting-there--car__open.png');
+        } else {
+          $carPic.attr('src', '../assets/images/day-guide--getting-there--car__closed.png');
+        }
+      });
+    </script>
+  </body>
+
+</html>
