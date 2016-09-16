@@ -89,6 +89,8 @@
 .callout.notice
 {
   background-color: rgba($yellow2, 0.8);
+  border-top: 2px solid $yellow-dark;
+  border-bottom: 2px solid $yellow-dark;
   margin-bottom: 32px;
 }
 

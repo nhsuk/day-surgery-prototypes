@@ -7,7 +7,7 @@ $lightweight: 200;
 $bodyweight: 400;
 $boldweight: 700;
 $heavyweight: 800;
-$smallprint: 14px;
+$smallprint: 16px;
 $feedback: 16px;
 $callout: 18px;
 
@@ -41,7 +41,7 @@ h1 {
 }
 
 h2 {
-  margin: 0; padding: $leading 0;
+  margin: 0; padding: $leading 0 0 0;
   font-size: 30px;
   font-weight: $boldweight;
   line-height: $leading*3;
