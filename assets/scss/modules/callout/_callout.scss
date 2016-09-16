@@ -1,0 +1,98 @@
+.callout {
+  padding: $leading $leading*2;
+
+  > .column-list {
+      -webkit-columns: 2;
+      -moz-columns: 2;
+      columns: 2;
+
+  }
+
+}
+
+.callout.aside {
+  position: relative;
+  z-index: 1;
+  top: 0px;
+  max-width: 34em;
+  margin-top: 0;
+  padding-top: $leading*2;
+
+
+
+  @include media(mid) {
+    top: -1*$leading*3;
+    padding-top: $leading;
+  }
+
+
+  @include media(large) {
+    top: -1*$leading*4;
+    padding-top: $leading;
+  }
+}
+
+.callout li {
+  letter-spacing: 0.5px;
+}
+
+/* 999 callout variation */
+
+.callout.emergency {
+  background-color: rgba($red, 0.9);
+  font-weight: $bodyweight;
+  color: $white;
+  margin: $leading, 0px, $leading, 0px;
+
+  > ul, p {
+    font-size: $callout;
+    font-weight: $lightweight;
+    line-height: $leading*1.5;
+  }
+
+}
+
+.callout.emergency a {
+  color: $light-blue3;
+  text-decoration: underline;
+}
+
+/* Info callout variation */
+
+.callout.info {
+  background-color: rgba($yellow, 0.2);
+}
+
+/* GP callout variation */
+
+.callout.gp {
+  border: 14px solid $light-blue2;
+  margin-bottom: $leading*2;
+}
+
+.callout.gp ul {
+      margin-bottom: $leading*2; /* possible dperecated */
+}
+
+/* 111 callout variation */
+
+.callout.oneoneone {
+  color: $white;
+}
+
+.callout.oneoneone a{
+  color: $white;
+}
+
+/* inline callout  */
+
+.callout.notice
+{
+  background-color: rgba($yellow2, 0.8);
+  margin-bottom: 32px;
+}
+
+.callout.notice p
+{
+  margin:0px;
+}
