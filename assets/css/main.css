@@ -113,7 +113,6 @@ p.lede {
   box-sizing: border-box;
   display: inline-block;
   font-family: inherit;
-  font-weight: 700;
   font-size: inherit;
   line-height: 48px;
   /*Do we need a mixin for this  to determine line height based on font height? */
@@ -122,9 +121,8 @@ p.lede {
   margin: 0 0 16px 0;
   text-align: center;
   color: #ffffff;
-  background-color: #76BD18;
   cursor: pointer;
-  border: 2px solid #6AAB20;
+  border-bottom: 4px solid #6AAB20;
   -webkit-appearance: none;
   letter-spacing: 1.000px;
 }
@@ -133,6 +131,11 @@ p.lede {
   text-decoration: none;
   color: #ffffff;
   background-color: #76BD18;
+}
+
+.button:hover {
+  background-color: #6AAB20;
+  border-bottom: 4px solid #55891a;
 }
 
 @media (min-width: 500px) {
@@ -149,7 +152,7 @@ p.lede {
 
 .button.-cancel {
   background-color: #D81E05;
-  border-color: #D81E05;
+  border-color: #ad1804;
 }
 
 .button.-submit-feedback {
@@ -161,6 +164,24 @@ p.lede {
   color: #000000;
   background-color: #999999;
   border-color: #999999;
+}
+
+.button.-back {
+  font-size: 16px;
+  padding: 0 16px;
+  background-color: #0072C6;
+  border: 2px solid #338ed1;
+}
+
+.button.-back:hover {
+  background-color: none;
+  border: 2px solid #99c7e8;
+}
+
+.button.-back:visited {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: none;
 }
 
 .condition-navigation > .nav-list {
@@ -601,6 +622,81 @@ html {
 
 .header-local-container a:visited {
   color: #D4EFFF;
+}
+
+.header-panel {
+  color: #ffffff;
+  background-color: #0072C6;
+  padding-top: 48px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+}
+
+.header-panel > .header {
+  margin-bottom: 32px;
+}
+
+.header-panel > .nav-list {
+  margin-top: 32px;
+  color: #ffffff;
+  font-size: 16px;
+  list-style: none;
+  list-style-position: outside;
+  padding-left: 0px;
+  line-height: 24px;
+  counter-reset: li;
+}
+
+.nav-item {
+  margin-left: 12px;
+  position: relative;
+  padding-bottom: 48px;
+  border-left: solid 2px;
+  padding-left: 30px;
+  margin-bottom: 0px;
+}
+
+.nav-item > .link {
+  color: #ffffff;
+}
+
+.nav-item:last-child {
+  border: none;
+  padding-left: 32px;
+}
+
+.nav-item::before {
+  content: counter(li);
+  /* Use the counter as content */
+  counter-increment: li;
+  /* Increment the counter by 1 */
+  position: absolute;
+  top: -6px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-right: 8px;
+  padding: 4px;
+  text-align: center;
+  color: #0072C6;
+  width: 32px;
+  height: 32px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background: white;
+  margin-left: -48px;
+}
+
+.content-seperator {
+  width: 130px;
+  height: 4px;
+  background-color: #338ed1;
+}
+
+.content-seperator.-grey {
+  background-color: #d3d2d2;
 }
 
 #feedback-area {
