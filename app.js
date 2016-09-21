@@ -12,6 +12,7 @@ var app = express();
 app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
 
+app.use(express.static('static'));
 app.use(express.static('assets'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(validator()); // this line must be immediately after express.bodyParser()!
