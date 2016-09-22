@@ -1,0 +1,84 @@
+// Buttons
+// ==========================================================================
+
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: $leading*3; /*Do we need a mixin for this  to determine line height based on font height? */
+  width: 100%;
+  padding: 0 $leading*2;
+  margin: 0 0 $leading 0;
+  text-align: center;
+  color: $white;
+  // background-color: $green;
+  cursor: pointer;
+  border-bottom: 4px solid $green-dark;
+  -webkit-appearance: none;
+  letter-spacing: 1.000px;
+
+
+  &:link,
+  &:hover,
+  &:focus,
+  &:visited {
+    text-decoration: none;
+    color: $white;
+    background-color: $green;
+  }
+
+  &:hover{
+     background-color: $green-dark;
+     border-bottom: 4px solid shade($green-dark, 20%);
+  }
+
+  @include media(mid) {
+    width: auto;
+    margin: 0 $leading*2 0 0;
+  }
+}
+
+// Fix unwanted button padding in Firefox
+.button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.button {
+
+  &.-cancel {
+    background-color: $red;
+    border-color: $red-dark;
+  }
+
+  &.-submit-feedback {
+    background-color: $feedback-button-green;
+    border-color: $feedback-button-green;
+  }
+
+  &.-opt-out {
+    color: $pure-black;
+    background-color: $opt-out-button-grey;
+    border-color: $opt-out-button-grey;
+  }
+
+  &.-back {
+    font-size: 16px;
+    padding: 0 $leading;
+    background-color: $nhs-blue;
+    border: 2px solid tint($nhs-blue, 20%);
+  }
+
+  &.-back:hover{
+     background-color: none;
+     border: 2px solid tint($nhs-blue, 60%);
+  }
+  &.-back:visited {
+    text-decoration: none;
+    color: $white;
+    background-color: none;
+  }
+
+
+}

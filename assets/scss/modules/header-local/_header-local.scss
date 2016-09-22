@@ -1,0 +1,111 @@
+#local-header {
+  color: $white;
+  background-color: $dark-blue2; /* $light-blue;*/
+}
+
+.header-local-container {
+  @extend %block;
+  @extend %contain-floats;
+
+  padding-top: $leading*2;
+  padding-bottom: $leading;
+
+  @include media(640px) {
+    padding-top: $leading*4;
+    padding-bottom: $leading*1;
+  }
+
+  @include media(large) {
+    padding-top: $leading*8;
+    padding-bottom: $leading*2;
+  }
+}
+
+.header-local-container a {
+  color: $white;
+}
+
+.header-local-container a:visited {
+  color: $visited-link-colour-on-blue;
+}
+
+.header-panel {
+  color: $white;
+  background-color: $nhs-blue;
+  padding-top: $leading*3;
+  padding-left: $leading*2;
+  padding-right: $leading*2;
+  padding-bottom: $leading*2;
+
+  >.header{
+    margin-bottom: $leading*2;
+  }
+
+  >.nav-list{
+    margin-top: $leading*2;
+    color: $white;
+    font-size: 16px;
+    list-style: none;
+    list-style-position: outside;
+    padding-left: 0px;
+    line-height: $leading*1.5;
+    counter-reset:li;
+  }
+}
+
+.nav-item {
+  margin-left:12px;
+  position: relative;
+  padding-bottom: $leading*3;
+  border-left: solid 2px;
+  padding-left:30px;
+  margin-bottom: 0px; //over-ride default li style
+
+  >.link {
+    color: $white;
+  }
+}
+
+.nav-item:last-child{
+  border: none;
+  padding-left:32px;
+}
+
+.nav-item::before {
+    content:counter(li); /* Use the counter as content */
+    counter-increment:li; /* Increment the counter by 1 */
+    position: absolute;
+    top: -6px;
+
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+
+    // width:2em;
+
+    margin-right:8px;
+    padding:4px;
+    text-align:center;
+
+    color: $nhs-blue;
+    width: $leading*2; 
+    height: $leading*2;
+
+
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    background: white;
+    margin-left: -$leading*3;
+
+  }
+
+  .content-seperator {
+    width: 130px;
+    height: $leading/4;
+    background-color: tint($nhs-blue, 20%);
+
+    &.-grey {
+      background-color: tint($black, 80%);
+    }
+  }

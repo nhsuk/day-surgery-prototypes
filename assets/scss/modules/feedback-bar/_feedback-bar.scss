@@ -1,0 +1,29 @@
+#feedback-area {
+  position: relative;
+  background-color: tint($feedback-alert-strip, 80);
+}
+
+.feedback-strip {
+  background-color: $feedback-alert-strip;
+}
+.feedback-strip-container {
+  @extend %block;
+  padding-top: $leading/8;
+  padding-bottom: $leading/8;
+}
+
+.feedback-form-container {
+  @extend %block;
+  padding-top: 1px;
+  padding-bottom: $leading*2;
+}
+
+.feedback-loading-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.8);
+  text-indent: -999em;
+}

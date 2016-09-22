@@ -1,0 +1,24 @@
+a {
+    color: $link-colour;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: $hover-link-colour;
+}
+
+a:visited {
+    color: $visited-link-colour;
+}
+
+a.on-blue {
+        color: $white;
+}
+
+a.on-blue:hover {
+    color: $hover-link-colour;
+}
+
+a.on-blue:visited {
+    color: $visited-link-colour;
+}

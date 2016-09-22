@@ -1,0 +1,40 @@
+html {
+  background-color: $light-grey;
+}
+
+#global-footer {
+  border-top: 4px solid rgba($dark-blue, 0.4);
+  background-color: $nhs-blue;
+}
+
+.footer-container {
+  @extend %block;
+  @extend %contain-floats;
+
+  padding-top: $leading*3;
+  padding-bottom: $leading*6;
+
+  p {
+    color: #fff;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: $white;
+
+    li {
+      margin: 0;
+
+      &:last-child:after {
+        content: '';
+      }
+    }
+  }
+}
+
+.footer-logo {
+   display: inline-block;
+   margin-bottom: $leading*4;
+ }
