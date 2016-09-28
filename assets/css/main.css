@@ -699,6 +699,16 @@ html {
   background-color: #d3d2d2;
 }
 
+.header-prefix {
+  padding-top: 32px;
+}
+
+.header-prefix span {
+  display: inline-block;
+  padding-top: 4px;
+  border-top: 4px solid #d3d2d2;
+}
+
 #feedback-area {
   position: relative;
   background-color: #fffaeb;
