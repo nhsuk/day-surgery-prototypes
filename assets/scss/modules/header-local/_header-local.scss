@@ -88,7 +88,7 @@
     text-align:center;
 
     color: $nhs-blue;
-    width: $leading*2; 
+    width: $leading*2;
     height: $leading*2;
 
 
@@ -109,3 +109,13 @@
       background-color: tint($black, 80%);
     }
   }
+
+.header-prefix {
+  padding-top: $leading*2;
+
+  span {
+    display: inline-block;
+    padding-top: $leading/4;
+    border-top: 4px solid tint($black, 80%);
+  }
+}
