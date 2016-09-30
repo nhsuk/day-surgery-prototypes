@@ -19,17 +19,30 @@ $light-blue2: #66B0E8;
 $light-blue3: #A8E8FF; /* #70C1FF */
 $blue2: #0091C9;
 
+//yellows
 $yellow: #FFED00;
 $yellow2: #FFB81C;
 $yellow-dark: #cc9316;
 
+//greys
+$grey: #e6e6e6;
+$nhs-grey-light: #d9e1e2;
+$nhs-grey-dark: #425563;
+
+//greens
+$nhs-green: #5bbf21;
+$nhs-green-dark: #3a7a15;
+
+//reds
 $red: #D81E05;
 $red-dark: shade($red, 20%) ;
+
+
+//others to sort (do this!)
 $green: #76BD18;
 $green-dark: #6AAB20;
 $feedback-button-green: #417505;
 
-$grey: #e6e6e6;
 $grey-2: rgba(118,134,146,0.2);
 $light-grey:  rgba(66,85,99,.15);
 $hr-white-30: rgba(white, 0.3);
@@ -42,12 +55,6 @@ $feedback-alert-strip: #FFE799;
 $nhs-blue: $blue;
 
 $page-colour: #F7FCFF;
-
-  /*
-    colours to test:
-    very light grey:F7F7F7
-    very light NHS blue: EBF6FF
-  */
 
 $header-bottom-margin: $hr-white-30;
 $text-colour: #0b0c0c; //off blacks

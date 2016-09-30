@@ -88,3 +88,59 @@ $gutter: 3.4%;
   /*background-color: #eee;*/
 }
 
+.grid-1-16 {
+  width: (6.25-$gutter);
+  float: left;
+}
+
+.grid-2-16 {
+  width: (6.25*2-$gutter);
+  float: left;
+}
+
+.grid-3-16 {
+  width: (6.25*3-$gutter);
+  float: left;
+}
+
+.grid-5-16 {
+  width: (6.25*5-$gutter);
+  float: left;
+}
+
+.grid-6-16 {
+  width: (6.25*6-$gutter);
+  float: left;
+}
+
+.grid-7-16 {
+  width: (6.25*7-$gutter);
+  float: left;
+}
+
+.grid-9-16 {
+  width: (6.25*9-$gutter);
+  float: left;
+}
+
+.grid-10-16 {
+  width: (6.25*10-$gutter);
+  float: left;
+}
+.grid-11-16 {
+  width: (6.25*11-$gutter);
+  float: left;
+}
+
+.grid-13-16 {
+  width: (6.25*13-$gutter);
+  float: left;
+}
+.grid-14-16 {
+  width: (6.25*14-$gutter);
+  float: left;
+}
+.grid-15-16 {
+  width: (6.25*15-$gutter);
+  float: left;
+}

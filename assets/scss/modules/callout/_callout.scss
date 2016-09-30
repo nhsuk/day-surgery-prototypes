@@ -1,5 +1,5 @@
 .callout {
-  padding: $leading $leading*2;
+  padding: $leading $leading;
 
   > .column-list {
       -webkit-columns: 2;
@@ -97,4 +97,34 @@
 .callout.notice p
 {
   margin:0px;
+}
+
+.callout.urgent {
+  background-color: rgba($red, 0.1);
+  border-top: $leading/4 solid $red;
+  margin-bottom: $leading*2;
+
+  >.headline {
+    color: $red;
+    line-height: $leading*2.5;
+    font-size: 32px;
+  }
+
+  >.content-seperator {
+    background-color: $black;
+  }
+
+  >p {
+    margin-bottom: 0px;
+  }
+
+  >ul {
+    margin-top: 0px;
+    margin-bottom: $leading;
+  }
+
+  >ul li {
+      margin-bottom:  0px;
+  }
+
 }
