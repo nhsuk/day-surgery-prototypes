@@ -42,3 +42,15 @@ img {
     background-color: tint($blue, 80%);
   }
 }
+
+.image-carousel {
+  margin-bottom: $leading*2;
+}
+
+.no-mobile-image {
+  visibility: hidden;
+
+    @include media(large) {
+    visibility: visible;
+    }
+}

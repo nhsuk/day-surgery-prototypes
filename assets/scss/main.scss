@@ -20,6 +20,19 @@
 @import "modules/layout/grid";
 @import "modules/layout/layout";
 
+//Typopgraphy
+@import "modules/typography/base";
+@import "modules/typography/headings";
+@import "modules/typography/paragraphs";
+@import "modules/typography/lists";
+@import "modules/typography/links";
+
+// Forms
+@import "modules/forms/label";
+@import "modules/forms/input";
+@import "modules/forms/textarea";
+@import "modules/forms/errors";
+
 //Display
 @import "modules/callout/callout";
 @import "modules/display/image-module";
@@ -36,15 +49,5 @@
 @import "modules/display/_decorative-elements";
 @import "modules/display/_rows";
 
-//Typopgraphy
-@import "modules/typography/base";
-@import "modules/typography/headings";
-@import "modules/typography/paragraphs";
-@import "modules/typography/lists";
-@import "modules/typography/links";
-
-// Forms
-@import "modules/forms/label";
-@import "modules/forms/input";
-@import "modules/forms/textarea";
-@import "modules/forms/errors";
+//step guidance
+@import "modules/step-guidance/step-guidance";

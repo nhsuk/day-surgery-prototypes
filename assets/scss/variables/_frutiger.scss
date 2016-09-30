@@ -50,7 +50,7 @@ h2 {
   }
 
   @include media(large) {
-    font-size: 36px;
+    font-size: 32px;
     line-height: $leading*3;
   }
 }

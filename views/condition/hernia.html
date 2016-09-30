@@ -1,7 +1,72 @@
-<p>
-  WAITING FOR VISUAL
-</p>
+{% extends "_layouts/_layout-default.html" %}
 
-<p>
-  <a href="/hernia/guide-surgery">Hernia guide link</a>
-</p>
+{% set pagetitle = "Hernia surgery - 7 steps to get you through surgery" %}
+
+
+{% block content %}
+
+<div class="content">
+
+    <div class="grid-row">
+        <div class="grid-3-3">
+            <div class="header-panel">
+                <h2 class="header">Hernia</h2>
+                <div class="content-seperator"></div>
+                <h3 class="precis">A hernia looks like a lump under the skin. It can be different sizes.</h3>
+            </div>
+        </div>
+    </div> <!-- end row -->
+    
+<div class="grid-row">
+    <div class="grid-10-16">
+
+        <div class="step-guidance">
+            <h2 class="heading-xlarge">When it’s a hernia</h2>
+            <ul class="steps">
+                <li>The lump is in your groin, stomach or thigh.</li>
+                <li>The lump often goes away when you lay down, especially at first.</li>
+                <li>The lump often appears when you cough or strain.</li>
+                <li>You can push the lump back in.</li>
+                <li>You feel a heaviness in your groin.</li>
+            </ul>
+            <div class="call-to-action">
+                <h2 class="heading-large">If you think you have a hernia, speak to a GP.</h2>
+                <p><a href="#" class="button">Visit your GP</a></p>
+            </div> 
+        </div>
+
+        <div class="image-carousel">
+            <h2 class="heading-xlarge" id="02">What does a hernia look like?</h2>
+            <img src="/images/hernia/hernia-image-module.jpg" />
+        </div>
+
+        <div>
+            <h2 class="heading-xlarge" id="02">What to do about Hernia</h2>
+            <p>Your GP will confirm if your lump is a hernia and discuss how it can be treated.</p>
+            <p>You’ll need to have an operation to repair your hernia. You may not need one straight away - it depends on the type of hernia and if it’s causing you problems. Your hernia may get bigger if it’s not treated, although this could take months or even years.</p>
+            <p><a href="types_of_hernia_and_complications">Types of hernia and complications</a></p>
+        </div>
+
+    </div>
+
+    <div class="grid-6-16">
+        <div class="callout urgent">
+            <h2 class="heading-xlarge headline">See a GP now or go to A&amp;E</h2>
+            <p>If you have a hernia and</p>
+            <ul>
+                <li>it feels hot</li>
+                <li>it becomes hard and tender</li>
+                <li>it’s suddenly painful</li>
+                <li>you have a fever</li>
+                <li>you have blood in your poo</li>
+            </ul>
+            <div class="content-seperator"></div>
+            <p>This could mean you have a <a href="#">strangulated hernia.</a></p>
+        </div>
+    </div>
+
+</div> <!-- end row -->
+
+</div> <!-- content -->
+
+{% endblock %}

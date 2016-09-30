@@ -14,7 +14,7 @@
   color: $white;
   // background-color: $green;
   cursor: pointer;
-  border-bottom: 4px solid $green-dark;
+  border-bottom: 4px solid $nhs-green-dark;
   -webkit-appearance: none;
   letter-spacing: 1.000px;
 
@@ -65,9 +65,10 @@
 
   &.-back {
     font-size: 16px;
-    padding: 0 $leading;
+    padding: 0 $leading/2;
     background-color: $nhs-blue;
     border: 2px solid tint($nhs-blue, 20%);
+   line-height: $leading*2;
   }
 
   &.-back:hover{

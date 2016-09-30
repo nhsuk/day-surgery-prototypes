@@ -1,0 +1,22 @@
+.step-guidance {
+  background-color: rgba($nhs-grey-light, 0.1);
+  margin-bottom: $leading*2;
+
+  >.heading-xlarge {
+    margin-left: $leading*2;
+    margin-right: $leading*2;
+  }
+
+  >.steps {
+    margin-left: $leading*2;
+    margin-right: $leading*2;
+  }
+
+}
+
+.call-to-action{
+    background-color: rgba($nhs-grey-light, 0.4); 
+    padding-left: $leading*2;
+    padding-right: $leading*2;
+    padding-bottom: 4px;
+}
