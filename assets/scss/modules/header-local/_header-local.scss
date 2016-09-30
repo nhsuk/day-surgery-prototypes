@@ -55,6 +55,9 @@
     line-height: $leading*1.5;
     counter-reset:li;
   }
+  &.-no-precis {
+     padding-bottom: $leading/2;
+   }
 }
 
 .nav-item {

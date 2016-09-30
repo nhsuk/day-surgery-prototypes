@@ -162,9 +162,10 @@ p.lede {
 
 .button.-back {
   font-size: 16px;
-  padding: 0 16px;
+  padding: 0 8px;
   background-color: #0072C6;
   border: 2px solid #338ed1;
+  line-height: 32px;
 }
 
 .button.-back:hover {
@@ -326,9 +327,11 @@ p.lede {
   float: left;
 }
 
-.grid-6-16 {
-  width: 34.1%;
-  float: left;
+@media (min-width: 640px) {
+  .grid-6-16 {
+    width: 34.1%;
+    float: left;
+  }
 }
 
 .grid-7-16 {
@@ -341,9 +344,11 @@ p.lede {
   float: left;
 }
 
-.grid-10-16 {
-  width: 59.1%;
-  float: left;
+@media (min-width: 640px) {
+  .grid-10-16 {
+    width: 59.1%;
+    float: left;
+  }
 }
 
 .grid-11-16 {
@@ -369,7 +374,7 @@ p.lede {
 body {
   margin: 0;
   padding: 0;
-  background-color: #F7FCFF;
+  background-color: #ffffff;
 }
 
 .header-container, .footer-container, .header-local-container, .feedback-strip-container, .feedback-form-container,
@@ -726,6 +731,16 @@ img {
   margin-bottom: 32px;
 }
 
+.no-mobile-image {
+  visibility: hidden;
+}
+
+@media (min-width: 980px) {
+  .no-mobile-image {
+    visibility: visible;
+  }
+}
+
 #global-header {
   border-bottom: 4px solid #0072C6;
 }
@@ -892,6 +907,10 @@ html {
   padding-left: 0px;
   line-height: 24px;
   counter-reset: li;
+}
+
+.header-panel.-no-precis {
+  padding-bottom: 8px;
 }
 
 .nav-item {
