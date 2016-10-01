@@ -45,8 +45,36 @@ img {
 
 .image-carousel {
   margin-bottom: $leading*2;
+
+  > ul {
+    background-color: $nhs-grey-light;
+    margin-top: 0px;
+    padding: 0;
+  }
+
+  > ul li {
+    background-color: rgba($nhs-grey-light, 0.5);
+    text-align: center;
+    box-sizing: border-box;
+    margin:0;
+    display: inline-block;
+    list-style-type: none;
+    width: 25%;
+    padding: $leading 0;
+    border-left:1px solid rgba($nhs-grey-mid, 0.5);
+  }
+
+  > ul li.selected {
+    background-color: $nhs-blue;
+    color: $white;
+  }
+
+  > ul li:first-child ul {
+    border: none;
+  }
 }
 
+/* hack */
 .no-mobile-image {
   visibility: hidden;
 
