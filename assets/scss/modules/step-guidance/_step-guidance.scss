@@ -8,8 +8,16 @@
   }
 
   >.steps {
-    margin-left: $leading*2;
     margin-right: $leading*2;
+
+    > li {
+      background: url('/images/hernia/chevron.png') no-repeat left top;
+      padding: 7px 0px 0px 50px;
+      /* reset styles (optional): */
+      list-style: none;
+      margin: 0;
+      padding-bottom: $leading;
+    }
   }
 
 }
