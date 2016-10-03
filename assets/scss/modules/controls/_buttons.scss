@@ -81,5 +81,24 @@
     background-color: none;
   }
 
+  &.-bordered {
+    border: 2px solid rgba($nhs-grey-light, 0.5);
+    background-color: rgba($nhs-grey-light, 0.1);;
+    padding: 2px $leading/2;
+    color: $nhs-blue;
+    margin-right: $leading/4;
+
+  }
+  &.-bordered:hover {
+    background-color: $nhs-grey-light;
+  }
+
+  &.-small {
+    @extends .-bordered;
+    margin-top:8px;
+    font-size: 16px;
+    line-height: 24px;
+     letter-spacing: -0.1px;
+  }
 
 }
