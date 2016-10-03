@@ -60,7 +60,9 @@
 /* Info callout variation */
 
 .callout.info {
-  background-color: rgba($yellow, 0.2);
+  background-color: rgba($nhs-grey-light, 0.2);
+  border-top: 2px solid $nhs-grey-light;
+  border-bottom: 2px solid $nhs-grey-light;
 }
 
 /* GP callout variation */

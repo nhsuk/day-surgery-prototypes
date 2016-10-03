@@ -9,10 +9,20 @@
 
     <div class="grid-row">
         <div class="grid-3-3">
+            <ul class="breadcrumb">
+                <li><a href="#" class="button -bordered -small">Conditions</a></li>
+                <li><a href="#" class="button -bordered -small">Lumps & swellings</a></li>
+                <li><a href="hernia" class="button -bordered -small">hernia</a></li>
+                <li class="selected">Hernia operation</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="grid-3-3">
             <div class="header-panel">
                 <h2 class="header">Hernia operation</h2>
-<!--                 <div class="content-seperator"></div>
-                <h3 class="precis">A hernia looks like a lump under the skin. It can be different sizes.</h3> -->
+                <div class="content-seperator"></div>
             </div>
         </div>
     </div> <!-- end row -->
@@ -37,7 +47,7 @@
         <div>
 
         <div>
-            <h2 class="heading-xlarge" id="02">Open surgery</h2>
+            <h2 class="heading-large" id="02">Open surgery</h2>
             <ol>
                 <li>You’ll be given medication so you don’t feel pain during the operation.  This will be either an injection in the spine to numb the area (local anaesthetic), or an injection into the vein to make you sleep during the operation (general anaesthetic).</li>
                 <li>The surgeon will make a cut (6-8cm long) over the hernia.  They will push the hernia back into your tummy and stitch a mesh over the weak spot the hernia came through. This strengthens it.</li>
@@ -46,7 +56,7 @@
         </div>
 
         <div>
-            <h2 class="heading-xlarge" id="02">Keyhole (laparoscopic) surgery</h2>
+            <h2 class="heading-large" id="02">Keyhole (laparoscopic) surgery</h2>
             <ol>
                 <li>You’ll be given an injection to make you sleep during the operation (general anaesthetic).</li>
                 <li>The surgeon will make 3 small cuts in your tummy. Your tummy will be filled with gas to make space and a camera and 2 small tools are inserted into the cuts. Your surgeon can see what they’re doing through the camera. </li>
@@ -58,9 +68,36 @@
         <div>
             <h3 class="heading-large" id="02">Types of keyhole surgery</h3>
             <p>There are 2 types of keyhole surgery for hernia:</p>
-            <p>Transabdominal preperitoneal (TAPP) </p>
-            <p>Totally extraperitoneal (TEP)</p>
+
+            <div><p><a href="#reveal-tapp" class="help-link"  onclick="$('#reveal-tapp').toggle();return false;">Transabdominal preperitoneal (TAPP) </a></p>
+              <small class="hidden-help" id="reveal-tapp">
+                <div class="callout info"><p>Transabdominal preperitoneal (TAPP) - instruments are inserted through the lining of your tummy into the space around your organs (the peritoneum). </p></div>
+              </small>
+            </div>
+    
+            <div>
+                <p><a href="#reveal-tep" class="help-link"  onclick="$('#reveal-tep').toggle();return false;">Totally extraperitoneal (TEP) </a></p>
+                <small class="hidden-help" id="reveal-tep">
+                  <div class="callout info"><p>Totally extraperitoneal (TEP) - a newer type of surgery.  The hernia is repaired without going through the lining of your organs. </p></div>
+                </small>
+            </div>
+
         </div>
+
+        <div>
+            <h2 class="heading-xlarge" id="02">What type of hernia operation of hernia is better?</h2>
+            <p>Both keyhole and open surgery for hernias in the groin are safe and work well</p>
+        </div>
+
+        <div>
+            <h3 class="heading-large" id="02">Keyhole surgery</h3>
+        </div>
+
+        <div>
+            <h3 class="heading-large" id="02">Open surgery</h3>
+        </div>
+
+    </div>
 
 </div> <!-- end row -->
 
