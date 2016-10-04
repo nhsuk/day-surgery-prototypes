@@ -1,0 +1,14 @@
+.progressive-reveal {
+        padding-bottom: $leading;
+}
+
+details{
+    padding-bottom: $leading;
+    > summary {
+        text-decoration:underline; color: $nhs-blue;
+        cursor: pointer; cursor: hand; 
+        }
+
+    > summary:focus { outline: none; }
+}
+
