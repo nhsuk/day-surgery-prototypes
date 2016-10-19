@@ -974,6 +974,10 @@ html {
   padding-bottom: 8px;
 }
 
+.header-panel-align {
+  padding-top: 48px;
+}
+
 .nav-item {
   margin-left: 12px;
   position: relative;
