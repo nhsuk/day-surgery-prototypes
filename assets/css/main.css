@@ -103,6 +103,10 @@ p.lede {
   color: #666666;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .button {
   box-sizing: border-box;
   display: inline-block;
@@ -177,6 +181,26 @@ p.lede {
   text-decoration: none;
   color: #ffffff;
   background-color: none;
+}
+
+.button.-bordered {
+  border: 2px solid rgba(217, 225, 226, 0.5);
+  background-color: rgba(217, 225, 226, 0.1);
+  padding: 2px 8px;
+  color: #0072C6;
+  margin-right: 4px;
+}
+
+.button.-bordered:hover {
+  background-color: #d9e1e2;
+}
+
+.button.-small {
+  @extends .-bordered;
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.1px;
 }
 
 .condition-navigation > .nav-list {
@@ -394,7 +418,7 @@ body {
 }
 
 .content {
-  padding-top: 32px;
+  padding-top: 16px;
 }
 
 @media (min-width: 640px) {
@@ -615,7 +639,9 @@ textarea:focus {
 
 /* Info callout variation */
 .callout.info {
-  background-color: rgba(255, 237, 0, 0.2);
+  background-color: rgba(217, 225, 226, 0.2);
+  border-top: 2px solid #d9e1e2;
+  border-bottom: 2px solid #d9e1e2;
 }
 
 /* GP callout variation */
@@ -652,7 +678,7 @@ textarea:focus {
 
 .callout.urgent {
   background-color: rgba(216, 30, 5, 0.1);
-  border-top: 4px solid #D81E05;
+  border-top: 8px solid #D81E05;
   margin-bottom: 32px;
 }
 
@@ -663,7 +689,7 @@ textarea:focus {
 }
 
 .callout.urgent > .content-seperator {
-  background-color: #231f20;
+  background-color: rgba(118, 134, 146, 0.5);
 }
 
 .callout.urgent > p {
@@ -731,6 +757,41 @@ img {
   margin-bottom: 32px;
 }
 
+.image-carousel > ul {
+  background-color: #d9e1e2;
+  margin-top: 0px;
+  padding: 0;
+}
+
+.image-carousel > ul li {
+  background-color: rgba(217, 225, 226, 0.5);
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  display: inline-block;
+  list-style-type: none;
+  width: 50%;
+  padding: 16px 0;
+  border-left: 1px solid rgba(118, 134, 146, 0.5);
+  border-top: 1px solid rgba(118, 134, 146, 0.5);
+}
+
+@media (min-width: 500px) {
+  .image-carousel > ul li {
+    width: 25%;
+  }
+}
+
+.image-carousel > ul li.selected {
+  background-color: #0072C6;
+  color: #ffffff;
+}
+
+.image-carousel > ul li:first-child ul {
+  border: none;
+}
+
+/* hack */
 .no-mobile-image {
   visibility: hidden;
 }
@@ -742,7 +803,7 @@ img {
 }
 
 #global-header {
-  border-bottom: 4px solid #0072C6;
+  border-bottom: 2px solid #0072C6;
 }
 
 .header-container {
@@ -1017,8 +1078,27 @@ hr {
   background-color: #0091C9;
 }
 
+.progressive-reveal {
+  padding-bottom: 16px;
+}
+
+details {
+  padding-bottom: 16px;
+}
+
+details > summary {
+  text-decoration: underline;
+  color: #0072C6;
+  cursor: pointer;
+  cursor: hand;
+}
+
+details > summary:focus {
+  outline: none;
+}
+
 .step-guidance {
-  background-color: rgba(217, 225, 226, 0.1);
+  background-color: rgba(118, 134, 146, 0.1);
   margin-bottom: 32px;
 }
 
@@ -1028,15 +1108,42 @@ hr {
 }
 
 .step-guidance > .steps {
-  margin-left: 32px;
   margin-right: 32px;
 }
 
+.step-guidance > .steps > li {
+  background: url("/images/hernia/chevron.png") no-repeat left top;
+  padding: 7px 0px 0px 50px;
+  /* reset styles (optional): */
+  list-style: none;
+  margin: 0;
+  padding-bottom: 16px;
+}
+
 .call-to-action {
-  background-color: rgba(217, 225, 226, 0.4);
+  background-color: rgba(118, 134, 146, 0.1);
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 4px;
+}
+
+.breadcrumb {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.breadcrumb > li {
+  float: left;
+}
+
+.breadcrumb > li.selected {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 12px;
+  padding-left: 4px;
+  letter-spacing: -0.1px;
 }
 
 /*# sourceMappingURL=main.css.map */
