@@ -1,0 +1,81 @@
+{% extends "_layouts/_layout-condition.html" %}
+
+{% set pagetitle = "Hernia" %}
+{% set subtitle = "A hernia looks like a lump under the skin. It can be different sizes." %}
+
+{% block breadcrumb %}
+    <li><a href="#" class="button -bordered -small">Conditions</a></li>
+    <li><a href="#" class="button -bordered -small">Lumps & swellings</a></li>
+    <li class="selected">Hernia</li>
+{% endblock %}
+
+{% block content %}
+
+        <div class="step-guidance">
+            <h2 class="heading-xlarge">When it’s a hernia</h2>
+            <ul class="steps">
+                <li>The lump is in your groin, stomach or thigh.</li>
+                <li>The lump often goes away when you lay down, especially at first.</li>
+                <li>The lump often appears when you cough or strain.</li>
+                <li>You can push the lump back in.</li>
+                <li>You feel a heaviness in your groin.</li>
+            </ul>
+            <div class="call-to-action">
+                <h2 class="heading-large">If you think you have a hernia, speak to a GP</h2>
+            </div> 
+        </div>
+
+        <div class="image-carousel">
+            <h2 class="heading-xlarge" id="02">What does a hernia look like?</h2>
+            <img src="/images/hernia/hernia-image-module.jpg" />
+            <ul>
+                <li class="selected">Groin</li><!--
+                --><li ><a href="#">Upper thigh</a></li><!--
+                --><li><a href="#">Tummy area</a></li><!--
+                --><li><a href="#">Testicle</a></li>
+            </ul>
+        </div>
+        
+        <div>
+            <p><a href="/condition/hernia/types-of-hernia">Different types of hernia and causes</a></p>
+        </div>
+
+        <!--<div>
+            <h2 class="heading-xlarge" id="02">What to do about a hernia</h2>
+            <p>If you think you have a hernia, speak to a GP.</p>
+            <p>Your GP will confirm if your lump is a hernia and discuss how it can be treated.</p>
+        </div>-->
+        
+        <div>
+            <h2 class="heading-xlarge" id="03">Hernia treatment</h2>
+            <p>Your GP will confirm if your lump is a hernia and discuss how it can be treated.</p>
+            <p>You’ll need an operation to repair your hernia. You may not need one straight away - it depends on the the type of hernia and if it’s causing you problems.</p>
+            <p>You should be able to have an <a href="/condition/hernia/hernia-operation">operation for groin hernia</a> within 18 weeks of your GP appointment.</p> 
+            <p class="callout info"><a href="/guide/hernia">The steps you need to go through to get to hernia surgery</a></p>
+            <!--<p><a href="/hernia/guide-surgery">Step by step guide to hernia surgery</a></p>-->
+        </div>
+
+{% endblock %}
+
+{% block asideurgent %}
+   
+    <h2 class="heading-xlarge headline">See a GP now or go to A&amp;E</h2>
+    <p>If you have a hernia and</p>
+    <ul>
+        <li>it feels hot</li>
+        <li>it's hard and tender</li>
+        <li>it’s suddenly painful</li>
+        <li>you have a fever</li>
+        <li>you have blood in your poo</li>
+    </ul>
+    <div class="content-seperator"></div>
+    <p>This could mean you have a</p>
+    <details>
+        <summary>Strangulated hernia</summary>
+        <div><p>If the muscle tightens around a hernia it can cut off the blood supply.  This is a strangulated hernia. You’ll need emergency surgery to treat it.</p></div>
+    </details>
+
+{% endblock %}
+
+
+

@@ -1,0 +1,45 @@
+{% include "_includes/head.html" %}
+
+<main>
+
+    <div class="content">
+        
+        <div class="grid-row">
+            <div class="grid-3-3">
+                <ul class="breadcrumb">
+                    {% block breadcrumb %}{% endblock %}
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid-row">
+            <div class="grid-3-3">
+                <div class="header-panel">
+                    {% if backbutton %}
+                        <a href="{{backbutton}}" class="button -back">Back</a>
+                    {% endif %}
+                    <h2 class="header">{{pagetitle}}</h2>
+                    <div class="content-seperator"></div>
+                    {% if subtitle %}
+                        <h3 class="precis">{{subtitle}}</h3>
+                    {% endif %}
+                </div>
+            </div>  
+        </div>
+        
+        <div class="grid-row">
+            <div class="grid-10-16">
+                {% block content %}{% endblock %}
+            </div>
+            <div class="grid-6-16">
+                <aside class="callout urgent">
+                    {% block asideurgent %}{% endblock %}
+                </aside>
+            </div>
+        </div>
+
+    </div> <!-- content -->
+    
+</main>
+
+{% include "_includes/footer.html" %}
