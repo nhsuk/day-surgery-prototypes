@@ -7,7 +7,11 @@
       columns: 2;
 
   }
-
+  
+  // Remove margin from top and bottom of first and last elements in callout
+  > :first-child  { margin-top: 0; }
+  > :last-child   { margin-bottom: 0; }
+  
 }
 
 .callout.aside {
@@ -129,4 +133,9 @@
       margin-bottom:  0px;
   }
 
+}
+
+.callout.guide {
+  border: 2px solid $nhs-grey-light;
+  display: block;
 }

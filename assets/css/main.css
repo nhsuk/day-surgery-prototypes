@@ -591,6 +591,14 @@ textarea:focus {
   columns: 2;
 }
 
+.callout > :first-child {
+  margin-top: 0;
+}
+
+.callout > :last-child {
+  margin-bottom: 0;
+}
+
 .callout.aside {
   position: relative;
   z-index: 1;
@@ -703,6 +711,11 @@ textarea:focus {
 
 .callout.urgent > ul li {
   margin-bottom: 0px;
+}
+
+.callout.guide {
+  border: 2px solid #d9e1e2;
+  display: block;
 }
 
 img {
@@ -1083,23 +1096,47 @@ hr {
   background-color: #0091C9;
 }
 
-.progressive-reveal {
-  padding-bottom: 16px;
+.progressive-reveal, .progressive-reveal--inline {
+  margin-bottom: 32px;
 }
 
-details {
-  padding-bottom: 16px;
+.progressive-reveal .reveal, .progressive-reveal--inline .reveal {
+  margin-top: 16px;
 }
 
-details > summary {
+.progressive-reveal details, .progressive-reveal--inline details {
+  margin-bottom: 32px;
+}
+
+.progressive-reveal summary, .progressive-reveal--inline summary, .progressive-reveal .summary, .progressive-reveal--inline .summary {
   text-decoration: underline;
   color: #0072C6;
   cursor: pointer;
   cursor: hand;
 }
 
-details > summary:focus {
+.progressive-reveal summary:focus, .progressive-reveal--inline summary:focus {
   outline: none;
+}
+
+/* 
+ * Extend progressive reveal 
+ * Summary can be used inline with text
+ * Arrow marker is hidden
+ */
+.progressive-reveal--inline summary::-webkit-details-marker {
+  display: none;
+}
+
+.progressive-reveal--inline summary {
+  text-decoration: none;
+  color: #231f20;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.progressive-reveal--inline .summary {
+  display: inline;
 }
 
 .step-guidance {

@@ -1,14 +1,46 @@
 .progressive-reveal {
-        padding-bottom: $leading;
+  margin-bottom: $leading*2;
+  
+  .reveal { margin-top: $leading; }
+  
+  details { margin-bottom: $leading*2; }
+  
+  summary, .summary {
+    text-decoration:underline; 
+    color: $nhs-blue;
+    cursor: pointer; 
+    cursor: hand;
+  }
+  
+  summary:focus { outline: none; }
+  
 }
 
-details{
-    padding-bottom: $leading;
-    > summary {
-        text-decoration:underline; color: $nhs-blue;
-        cursor: pointer; cursor: hand; 
-        }
+/* 
+ * Extend progressive reveal 
+ * Summary can be used inline with text
+ * Arrow marker is hidden
+ */
 
-    > summary:focus { outline: none; }
+.progressive-reveal--inline {
+  @extend .progressive-reveal;
+  
+  // Hide marker
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  // Reset summary styles
+  summary {
+    text-decoration:none; 
+    color: $black;
+    cursor: pointer; 
+    cursor: hand;
+  }
+  
+   // Reapply summary styles to inline element
+  .summary {
+    display: inline; 
+  }
+  
 }
-

@@ -2,12 +2,13 @@
 
 {% set pagetitle = "What is a hernia?" %}
 {% set backbutton = "/condition/hernia" %}
+{% set layout = "asideBottom" %} {# asideRight, asideBottom #}
 
 {% block breadcrumb %}
     <li><a href="#" class="button -bordered -small">Conditions</a></li>
     <li><a href="#" class="button -bordered -small">Lumps & swellings</a></li>
-    <li><a href="hernia" class="button -bordered -small">Hernia</a></li>
-    <li class="selected">Types</li>
+    <li><a href="/condition/hernia" class="button -bordered -small">Hernia</a></li>
+    <li class="selected">{{pagetitle}}</li>
 {% endblock %}
 
 {% block header %}{% endblock %}
@@ -59,7 +60,7 @@
 
 {% endblock %}
 
-{% block asideurgent %}
+{% block callout %}
     <h2 class="heading-xlarge headline">See a GP now or go to A&amp;E</h2>
     <p>If you have a hernia and</p>
     <ul>

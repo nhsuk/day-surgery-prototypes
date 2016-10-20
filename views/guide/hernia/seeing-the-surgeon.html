@@ -1,7 +1,15 @@
 {% extends "_layouts/_layout-guide.html" %}
 
-{% set pagetitle = "Seeing the surgeon" %}
-{% set backbutton = "surgery-guide" %}
+{% set pagetitle = "Questions to ask your surgeon" %}
+{% set backbutton = "/guide/hernia" %}
+
+{% block breadcrumb %}
+    <li><a href="#" class="button -bordered -small">Conditions</a></li>
+    <li><a href="#" class="button -bordered -small">Lumps & swellings</a></li>
+    <li><a href="/condition/hernia" class="button -bordered -small">Hernia</a></li>
+    <li><a href="/guide/hernia" class="button -bordered -small">Hernia surgery</a></li>
+    <li class="selected">{{pagetitle}}</li>
+{% endblock %}
 
 {% block header %}
         <div class="content-seperator"></div>
@@ -10,7 +18,7 @@
 
 {% block content %}
 
-      <div class="content-seperator -grey" id="01"></div>
+      <!--<div class="content-seperator -grey" id="01"></div>-->
 
       <p>The surgeon will talk you through the treatments that could help you, and you can decide the best treatment together.  You might decide it’s not surgery.</p>
       <!--<p>You can choose which hospital you want to go to. Once booked, you’ll get a confirmation in the post.</p>-->
