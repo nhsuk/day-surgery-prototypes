@@ -605,6 +605,10 @@ textarea:focus {
   color: #0072C6;
 }
 
+.callout:hover .callout__title {
+  color: #66B0E8;
+}
+
 /* Modifier */
 .callout--guide {
   border: 2px solid #d9e1e2;
@@ -614,6 +618,8 @@ textarea:focus {
 }
 
 .callout--info {
+  border: 2px solid #d9e1e2;
+  border-bottom-width: 4px;
   text-decoration: none;
   position: relative;
 }

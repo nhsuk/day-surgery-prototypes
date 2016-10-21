@@ -20,6 +20,11 @@
 .callout__title {
   display: block;
   color: $nhs-blue;
+  
+  .callout:hover & {
+    color: $light-blue2;
+  }
+  
 }
 
 /* Modifier */
@@ -34,6 +39,8 @@
 }
 
 .callout--info {
+  border: 2px solid $nhs-grey-light;
+  border-bottom-width: 4px;
   text-decoration: none;
   position: relative;
 }
