@@ -26,7 +26,64 @@
 
 .callout--guide {
   border: 2px solid $nhs-grey-light;
+  border-bottom-width: 4px;
   text-decoration: none;
+  position: relative;
+}
+
+.callout--corner {
+  border: 2px solid $nhs-grey-light;
+  border-bottom-width: 4px;
+  text-decoration: none;
+  position: relative;
+  
+  &:after {
+    content:""; 
+    position: absolute;
+    width: 0;
+    height: 0px;
+    border-bottom: 42px solid $page-colour;
+    border-left: 40px solid $nhs-grey-light;
+    bottom: -4px;
+    right: -2px;
+  }
+  
+}
+
+.callout--line {
+  border-bottom: 4px solid $nhs-grey-light;
+  text-decoration: none;
+  position: relative;
+  
+  &:after {
+    content:""; 
+    position: absolute;
+    width: 0;
+    height: 0px;
+    border-bottom: 30px solid $nhs-grey-light;
+    border-left: 30px solid $page-colour;
+    bottom: 0;
+    right: 0;
+  }
+  
+}
+
+.callout--steps {
+  border: 2px solid $nhs-grey-light;
+  border-bottom-width: 4px;
+  text-decoration: none;
+  position: relative;
+  
+  &:after {
+    content:"1 2 3";
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+    font-size: 60px;
+    @extend .smallprint;
+    color: $nhs-grey-light;
+  }
+  
 }
 
 

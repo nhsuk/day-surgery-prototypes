@@ -98,7 +98,7 @@ p.lede {
   color: #A8E8FF;
 }
 
-.smallprint, .callout__small {
+.smallprint, .callout__small, .callout--steps:after {
   font-size: 16px;
   color: #666666;
 }
@@ -608,7 +608,60 @@ textarea:focus {
 /* Modifier */
 .callout--guide {
   border: 2px solid #d9e1e2;
+  border-bottom-width: 4px;
   text-decoration: none;
+  position: relative;
+}
+
+.callout--corner {
+  border: 2px solid #d9e1e2;
+  border-bottom-width: 4px;
+  text-decoration: none;
+  position: relative;
+}
+
+.callout--corner:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0px;
+  border-bottom: 42px solid #ffffff;
+  border-left: 40px solid #d9e1e2;
+  bottom: -4px;
+  right: -2px;
+}
+
+.callout--line {
+  border-bottom: 4px solid #d9e1e2;
+  text-decoration: none;
+  position: relative;
+}
+
+.callout--line:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0px;
+  border-bottom: 30px solid #d9e1e2;
+  border-left: 30px solid #ffffff;
+  bottom: 0;
+  right: 0;
+}
+
+.callout--steps {
+  border: 2px solid #d9e1e2;
+  border-bottom-width: 4px;
+  text-decoration: none;
+  position: relative;
+}
+
+.callout--steps:after {
+  content: "1 2 3";
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  font-size: 60px;
+  color: #d9e1e2;
 }
 
 .callout.aside {
