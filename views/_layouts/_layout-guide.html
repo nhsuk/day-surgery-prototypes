@@ -20,6 +20,10 @@
                     <p><a href="{{backbutton}}" class="button -back">Back</a></p>
                     {% endif %}
                     <h2 class="header">{{pagetitle}}</h2>
+                    {% if subtitle %}
+                    <div class="content-seperator"></div>
+                    <p>{{subtitle}}</p>
+                    {% endif %}
                     {% block header %}{% endblock %}
                 </header>
             </div>

@@ -19,14 +19,21 @@
 
 .callout__title {
   display: block;
-  color: $text-colour;
+  color: $nhs-blue;
 }
 
 /* Modifier */
 
+// Testing out call out styles
+
 .callout--guide {
   border: 2px solid $nhs-grey-light;
   border-bottom-width: 4px;
+  text-decoration: none;
+  position: relative;
+}
+
+.callout--info {
   text-decoration: none;
   position: relative;
 }

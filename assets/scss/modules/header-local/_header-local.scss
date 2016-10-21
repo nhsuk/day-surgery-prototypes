@@ -57,7 +57,10 @@
   }
   &.-no-precis {
      padding-bottom: $leading/2;
-   }
+  }
+  
+  > :last-child { margin-bottom: 0; }
+  
 }
 
 .header-panel-align {

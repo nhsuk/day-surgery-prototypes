@@ -602,13 +602,18 @@ textarea:focus {
 
 .callout__title {
   display: block;
-  color: #0b0c0c;
+  color: #0072C6;
 }
 
 /* Modifier */
 .callout--guide {
   border: 2px solid #d9e1e2;
   border-bottom-width: 4px;
+  text-decoration: none;
+  position: relative;
+}
+
+.callout--info {
   text-decoration: none;
   position: relative;
 }
@@ -1045,6 +1050,10 @@ html {
 
 .header-panel.-no-precis {
   padding-bottom: 8px;
+}
+
+.header-panel > :last-child {
+  margin-bottom: 0;
 }
 
 .header-panel-align {
