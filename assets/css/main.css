@@ -98,7 +98,7 @@ p.lede {
   color: #A8E8FF;
 }
 
-.smallprint, .callout__small, .callout--steps:after {
+.smallprint, .callout__small, .callout--steps:after, figure figcaption {
   font-size: 16px;
   color: #666666;
 }
@@ -584,7 +584,7 @@ textarea:focus {
 /* Block */
 .callout {
   display: block;
-  padding: 16px 16px;
+  padding: 16px;
 }
 
 .callout > :first-child {
@@ -611,15 +611,31 @@ textarea:focus {
 
 /* Modifier */
 .callout--guide {
-  border: 2px solid #d9e1e2;
-  border-bottom-width: 4px;
   text-decoration: none;
   position: relative;
+  background-color: rgba(217, 225, 226, 0.2);
+  border-top: 2px solid #d9e1e2;
+  border-bottom: 2px solid #d9e1e2;
+  padding-right: calc(40px + $leading);
+  max-width: 50%;
+}
+
+.callout--guide:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0px;
+  border-bottom: 40px solid #ffffff;
+  border-left: 40px solid #d9e1e2;
+  bottom: -2px;
+  right: 0px;
 }
 
 .callout--info {
-  border: 2px solid #d9e1e2;
-  border-bottom-width: 4px;
+  background: #d9e1e2;
+  border-top: 2px solid #d9e1e2;
+  border-bottom: 2px solid #d9e1e2;
+  /* border-bottom-width: 4px; */
   text-decoration: none;
   position: relative;
 }
@@ -1229,7 +1245,7 @@ hr {
 }
 
 .step-guidance > .steps > li {
-  background: url("/images/hernia/chevron.png") no-repeat left top;
+  background: url("/images/hernia/chevron.png") no-repeat 16px 13px;
   padding: 7px 0px 0px 50px;
   /* reset styles (optional): */
   list-style: none;
@@ -1238,10 +1254,22 @@ hr {
 }
 
 .call-to-action {
-  background-color: rgba(118, 134, 146, 0.1);
+  background-color: rgba(118, 134, 146, 0.25);
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 4px;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+  border: 2px #d9e1e2 solid;
+  padding: 2px;
+  margin-bottom: 32px;
+}
+
+figure figcaption {
+  padding: 8px 16px;
 }
 
 .breadcrumb {

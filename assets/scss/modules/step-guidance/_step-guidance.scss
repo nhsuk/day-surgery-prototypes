@@ -11,7 +11,7 @@
     margin-right: $leading*2;
 
     > li {
-      background: url('/images/hernia/chevron.png') no-repeat left top;
+      background: url('/images/hernia/chevron.png') no-repeat $leading 13px;
       padding: 7px 0px 0px 50px;
       /* reset styles (optional): */
       list-style: none;
@@ -23,8 +23,22 @@
 }
 
 .call-to-action{
-    background-color: rgba($nhs-grey-mid, 0.1); 
+    background-color: rgba($nhs-grey-mid, 0.25); 
     padding-left: $leading*2;
     padding-right: $leading*2;
     padding-bottom: 4px;
+}
+
+
+figure {
+  padding: 0;
+  margin: 0;
+  border: 2px $nhs-grey-light solid;
+  padding: 2px;
+  margin-bottom: ($leading * 2);
+  
+  figcaption {
+    @extend .smallprint;
+    padding: ($leading / 2) $leading;
+  }
 }

@@ -2,7 +2,7 @@
 
 .callout {
   display: block;
-  padding: $leading $leading;
+  padding: $leading;
   
   // Remove margin from top and bottom of first and last elements in callout
   > :first-child  { margin-top: 0; }
@@ -32,15 +32,32 @@
 // Testing out call out styles
 
 .callout--guide {
-  border: 2px solid $nhs-grey-light;
-  border-bottom-width: 4px;
   text-decoration: none;
   position: relative;
+  background-color: rgba($nhs-grey-light, 0.2);
+  border-top: 2px solid $nhs-grey-light;
+  border-bottom: 2px solid $nhs-grey-light;
+  padding-right: calc(40px + $leading);
+  max-width: 50%;
+  
+   &:after {
+    content:""; 
+    position: absolute;
+    width: 0;
+    height: 0px;
+    border-bottom: 40px solid $page-colour;
+    border-left: 40px solid $nhs-grey-light;
+    bottom: -2px;
+    right: 0px;
+  }
+  
 }
 
 .callout--info {
-  border: 2px solid $nhs-grey-light;
-  border-bottom-width: 4px;
+  background: $nhs-grey-light;
+  border-top: 2px solid $nhs-grey-light;
+  border-bottom: 2px solid $nhs-grey-light;
+  /* border-bottom-width: 4px; */
   text-decoration: none;
   position: relative;
 }
