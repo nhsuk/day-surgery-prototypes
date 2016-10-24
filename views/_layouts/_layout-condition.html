@@ -1,0 +1,50 @@
+{% include "_includes/head.html" %}
+
+<main>
+
+  <div class="content">
+        
+    <!--<div class="grid-row">
+      <div class="grid-3-3">
+          <ul class="breadcrumb">
+            {% block breadcrumb %}{% endblock %}
+          </ul>
+      </div>
+    </div> -->
+
+    <div class="grid-row">
+      <div class="grid-3-3">
+        <header class="header-panel">
+        {% if backbutton %}
+          <a href="{{backbutton}}" class="button -back">Back</a>
+        {% endif %}
+        <h2 class="header">{{pagetitle}}</h2>
+        {% if subtitle %}
+          <div class="content-seperator"></div>
+          <h3 class="precis">{{subtitle}}</h3>
+        {% endif %}
+        </header>
+      </div>  
+    </div>
+        
+    <div class="grid-row">
+
+      <div class="grid-10-16">
+        {% block content %}{% endblock %}
+      </div>
+
+      {% if layout %}
+      <div class="{% if layout == "asideRight" %}grid-6-16{% elseif layout == "asideBottom" %}grid-10-16{% endif %}">
+        <aside class="callout urgent">
+          {% block callout %}{% endblock %}
+        </aside>
+      </div>
+      {% endif %}
+
+    </div>
+
+  </div> <!-- content -->
+    
+</main>
+
+{% include "_includes/footer.html" %}

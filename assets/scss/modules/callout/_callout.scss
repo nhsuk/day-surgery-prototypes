@@ -1,14 +1,124 @@
+/* Block */
+
 .callout {
-  padding: $leading $leading;
-
-  > .column-list {
-      -webkit-columns: 2;
-      -moz-columns: 2;
-      columns: 2;
-
-  }
-
+  display: block;
+  padding: $leading;
+  
+  // Remove margin from top and bottom of first and last elements in callout
+  > :first-child  { margin-top: 0; }
+  > :last-child   { margin-bottom: 0; }
+  
 }
+
+/* Element */
+
+.callout__small {
+  @extend .smallprint;
+  display: block;
+}
+
+.callout__title {
+  display: block;
+  color: $nhs-blue;
+  
+  .callout:hover & {
+    color: $light-blue2;
+  }
+  
+}
+
+/* Modifier */
+
+// Testing out call out styles
+
+.callout--guide {
+  text-decoration: none;
+  position: relative;
+  background-color: rgba($nhs-grey-light, 0.2);
+  border-top: 2px solid $nhs-grey-light;
+  border-bottom: 2px solid $nhs-grey-light;
+  padding-right: calc(40px + $leading);
+  max-width: 50%;
+  
+   &:after {
+    content:""; 
+    position: absolute;
+    width: 0;
+    height: 0px;
+    border-bottom: 40px solid $page-colour;
+    border-left: 40px solid $nhs-grey-light;
+    bottom: -2px;
+    right: 0px;
+  }
+  
+}
+
+.callout--info {
+  background: $nhs-grey-light;
+  border-top: 2px solid $nhs-grey-light;
+  border-bottom: 2px solid $nhs-grey-light;
+  /* border-bottom-width: 4px; */
+  text-decoration: none;
+  position: relative;
+}
+
+.callout--corner {
+  border: 2px solid $nhs-grey-light;
+  border-bottom-width: 4px;
+  text-decoration: none;
+  position: relative;
+  
+  &:after {
+    content:""; 
+    position: absolute;
+    width: 0;
+    height: 0px;
+    border-bottom: 42px solid $page-colour;
+    border-left: 40px solid $nhs-grey-light;
+    bottom: -4px;
+    right: -2px;
+  }
+  
+}
+
+.callout--line {
+  border-bottom: 4px solid $nhs-grey-light;
+  text-decoration: none;
+  position: relative;
+  
+  &:after {
+    content:""; 
+    position: absolute;
+    width: 0;
+    height: 0px;
+    border-bottom: 30px solid $nhs-grey-light;
+    border-left: 30px solid $page-colour;
+    bottom: 0;
+    right: 0;
+  }
+  
+}
+
+.callout--steps {
+  border: 2px solid $nhs-grey-light;
+  border-bottom-width: 4px;
+  text-decoration: none;
+  position: relative;
+  
+  &:after {
+    content:"1 2 3";
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+    font-size: 60px;
+    @extend .smallprint;
+    color: $nhs-grey-light;
+  }
+  
+}
+
+
+// Other callouts to organise
 
 .callout.aside {
   position: relative;

@@ -1,0 +1,30 @@
+{% extends "_layouts/_layout-guide.html" %}
+
+{% set pagetitle = "Your pre-operative assessment appointment" %}
+{% set backbutton = "/guide/hernia" %}
+
+{% block breadcrumb %}
+    <li><a href="#" class="button -bordered -small">Conditions</a></li>
+    <li><a href="#" class="button -bordered -small">Lumps & swellings</a></li>
+    <li><a href="/condition/hernia" class="button -bordered -small">Hernia</a></li>
+    <li><a href="/guide/hernia" class="button -bordered -small">Hernia surgery</a></li>
+    <li class="selected">{{pagetitle}}</li>
+{% endblock %}
+
+{% block header %}{% endblock %}
+
+{% block content %}
+
+    <!--<div class="content-seperator -grey" id="01"></div>-->
+    <p>During your pre-operative assessment the nurse will ask you about your health and do things like:</p>
+    <ul>
+        <li>take your blood pressure</li>
+        <li>weigh you</li>
+        <li>test you for bacteria, such as <a href="http://www.nhs.uk/conditions/MRSA/Pages/Introduction.aspx">MRSA</a></li>
+    </ul>
+    <p>You may need other tests, like blood tests and you may also speak to the anaesthetist.</p>
+    <p>If you take medicine, bring it with you (including vitamins and herbal supplements).</p>
+    <p>You’ll also be give more information about your surgery, such as the time and what you can and drink on the day.</p>
+    <p>This appointment usually lasts an hour.</p>
+
+{% endblock %}

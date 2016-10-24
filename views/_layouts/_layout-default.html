@@ -1,37 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>
-    {% if pagetitle %}{{ pagetitle }} | {% endif %}NHS.UK
-  </title>
-
-  <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/50c9c92a-7fe0-4c8b-bd64-c7d3d2fafc87.css"/>
-  <link href="/css/main.css" media="screen" rel="stylesheet" type="text/css" />
-
-</head>
-<body>
-
-{% include "_includes/header-global.html" %}
+{% include "_includes/head.html" %}
 
 <main>
-  <!-- {% block localheader %}{% endblock %} -->
   {% block content %}{% endblock %}
 </main>
 
-{% include "_includes/footer-global.html" %}
-
-{% include "_includes/scripts.html" %}
-
-{% if GOOGLE_ANALYTICS_TRACKING_ID %}
-  {% include "_includes/google-analytics.html" %}
-{% endif %}
-
-{% if MOUSE_STATS_ACCOUNT_ID %}
-  {% include "_includes/mouse-stats-analytics.html" %}
-{% endif %}
-
-</body>
-</html>
+{% include "_includes/footer.html" %}

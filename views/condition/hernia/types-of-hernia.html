@@ -1,0 +1,71 @@
+{% extends "_layouts/_layout-condition.html" %}
+
+{% set pagetitle = "What is a hernia?" %}
+{% set backbutton = "/condition/hernia" %}
+{% set layout = "asideBottom" %} {# asideRight, asideBottom #}
+
+{% block breadcrumb %}
+    <li><a href="#" class="button -bordered -small">Conditions</a></li>
+    <li><a href="#" class="button -bordered -small">Lumps & swellings</a></li>
+    <li><a href="/condition/hernia" class="button -bordered -small">Hernia</a></li>
+    <li class="selected">{{pagetitle}}</li>
+{% endblock %}
+
+{% block header %}{% endblock %}
+
+{% block content %}
+
+    <div>
+        <p>A hernia happens when your bowel or fatty tissue pokes through a gap in the muscle. This is because of a weakness in your muscle. It can be something you’re born with or caused by a strain, such as straining on the toilet or being overweight.  </p>
+        <p>You’re more prone to hernias as you get older.</p>
+    </div>
+    
+    <figure class="no-mobile-image">
+      <img src="/images/hernia/hernia-illustration.png">
+      <figcaption>A hernia happens when your bowel or fatty tissue pokes through a gap in the muscle</figcaption>
+    </figure>
+
+    <div>
+        <h2 class="heading-xlarge">Types of hernia</h2>
+        <p>Different types of hernia develop in different parts of the body.</p>
+    </div>
+
+    <div>
+        <h2 class="heading-large">Hernias in the groin</h2>
+        <p>An Inguinal hernia shows in the upper thigh, groin or a swelling around the scrotum. The bowel pushes into an area called the inguinal canal.  It’s the most common type of hernia and mostly affects men. </p>
+        <p>A femoral hernia also show in the upper thigh or groin.  The bowel pushes into an area called the femoral canal.  Around 1 in 20 hernias are femoral.  They mostly affect women.</p> 
+    </div>
+
+    <div>
+        <h2 class="heading-large">Hernias in the tummy area</h2>
+        <p>An <a href="http://www.nhs.uk/Conditions/UmbilicalHernia/Pages/Whatisitpage.aspx">umbilical hernia</a> shows a as a lump near the belly button.  It’s common in babies but can affect adults. </p>
+        <p>An epigastric hernia usually appears between your belly button and your breastbone.</p>
+        <p>A spigelian hernia usually appears on the side of your tummy area (below the belly button)</p> 
+    </div>
+
+    <div>
+        <h2 class="heading-large">Hernias in chest</h2>
+        <p>A <a href="http://www.nhs.uk/Conditions/Hernia-hiatus/Pages/Introduction.aspx">hiatus hernia</a> happens when part of the stomach pushes into your chest. It may not cause a lump, but it can cause heartburn and a funny taste in your mouth. </p>
+    </div>
+
+    <div class="content-seperator -grey"></div>
+
+    <div>
+        <h2 class="heading-xlarge">Hernia complications</h2>
+        <p>Hernias can sometimes cause problems.</p>
+        <p>If the bowel gets stuck in the hernia, it can become blocked (obstruction).</p>
+        <p>If the gap in the muscle becomes too tight, it can trap the bowel and cut off its blood supply (strangulation).</p>
+    </div>
+
+{% endblock %}
+
+{% block callout %}
+    <h2 class="heading-xlarge headline">See a GP now or go to A&amp;E</h2>
+    <p>If you have a hernia and</p>
+    <ul>
+        <li>it's painful</li>
+        <li>it feels hot</li>
+        <li>it feels hard and tender</li>
+        <li>you have a fever</li>
+    </ul>
+{% endblock %}
